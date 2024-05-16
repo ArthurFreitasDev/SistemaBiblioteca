@@ -4,8 +4,6 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Android.OS;
-using Android.Views;
 using MySql.Data.MySqlClient;
 using Mysqlx;
 
@@ -18,20 +16,17 @@ namespace SistemaBiblioteca.Resources.Banco
         public static MySqlDataAdapter Adaptador;
         public static DataTable datTable;
 
-        public static void DisplayAlert(string v1, string message, string v2)
-        {
-            throw new NotImplementedException();
-        }
-
-        public static void AbrirConexao()
+        public static async void AbrirConexao()
         {
             try
             {
-                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root,pwd=etecjau");
+                Conexao = new MySqlConnection("server=localhost;port=3307;uid=root;pwd=etecjau");
+
+                Conexao.Open();
             }
             catch(Exception ex)
             {
-                DisplayAlert("Erro", ex.Message, "OK");
+                System.Diagnostics.Debug.WriteLine("Erro!==========" + ex.Message);
             }
         }
 
@@ -43,7 +38,7 @@ namespace SistemaBiblioteca.Resources.Banco
             }
             catch(Exception ex)
             {
-                DisplayAlert("Erro", ex.Message, "OK");
+                System.Diagnostics.Debug.WriteLine("Erro!" + ex.Message);
             }
         }
 
@@ -57,10 +52,11 @@ namespace SistemaBiblioteca.Resources.Banco
 
                 Comando = new MySqlCommand("create table if not exists Funcionario(idFuncionario int auto_increment,Nome varchar(40),Senha varchar(40),primary key (idFuncionario));", Conexao);
                 Comando.ExecuteNonQuery();
+                FecharConexao();
             }
             catch (Exception ex)
             {
-                DisplayAlert("Erro", ex.Message, "OK");
+                System.Diagnostics.Debug.WriteLine("Erro!" + ex.Message);
             }
         }
     }

@@ -16,9 +16,9 @@
         <StackLayout Margin="30,15,0,0">
             <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*">
                 <Label Text="Cadastro de Funcionario" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" FontSize="30"/>
-                <Entry Placeholder="Nome" x:Name="Nome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
-                <Entry Placeholder="Senha" x:Name="Senha" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
-                <Entry Placeholder="Confirmar senha" x:Name="ConfirmarSenha" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <Entry Placeholder="Nome" x:Name="txtNome" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <Entry Placeholder="Senha" x:Name="txtSenha" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"/>
+                <Entry Placeholder="Confirmar senha" x:Name="txtConfirmarSenha" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
                 <Button Text="Confirmar" Clicked="AdicionarFuncionario" Grid.Column="1" Grid.Row="4" Margin="0,20,0,0"/>
             </Grid>
         </StackLayout>
