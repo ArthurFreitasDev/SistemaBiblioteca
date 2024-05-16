@@ -47,7 +47,8 @@ namespace SistemaBiblioteca.Resources.Banco
             try
             {
                 AbrirConexao();
-                Comando = new MySqlCommand("create database if not exists Biblioteca;use Biblioteca;", Conexao);
+                Comando = new MySqlCommand("create database if not exists Biblioteca;", Conexao);
+                Comando = new MySqlCommand("use Biblioteca;", Conexao);
                 Comando.ExecuteNonQuery();
 
                 Comando = new MySqlCommand("create table if not exists Funcionario(idFuncionario int auto_increment,Nome varchar(40),Senha varchar(40),primary key (idFuncionario));", Conexao);

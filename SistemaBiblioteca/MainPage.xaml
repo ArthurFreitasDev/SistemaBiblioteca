@@ -4,7 +4,10 @@
              x:Class="SistemaBiblioteca.MainPage">
 
     <StackLayout>
-        <Button Clicked="Button_Clicked"/>
+        <Button Clicked="Funcionario" Text="Funcionario"/>
+        <Button Clicked="Autor" Text="Autor"/>
+        <Button Clicked="Categoria" Text="Categoria"/>
+        <Button Clicked="Editora" Text="Editora"/>
     </StackLayout>
 
 </ContentPage>

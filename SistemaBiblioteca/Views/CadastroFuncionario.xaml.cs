@@ -31,6 +31,13 @@ public partial class CadastroFuncionario : ContentPage
 
                     };
                     f.AdicionarFuncionario();
+                    txtNome.Text = "";
+                    txtSenha.Text = "";
+                    txtConfirmarSenha.Text = "";
+                }
+                else
+                {
+                    DisplayAlert("Senhas diferentes", "As senhas estão diferentes", "OK");
                 }
             }
         }

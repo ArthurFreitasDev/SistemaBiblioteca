@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SistemaBiblioteca.Views.CadastroFuncionario"
-             Title=""
-             BackgroundColor="#7B68EE">
-
+             x:Class="SistemaBiblioteca.Views.CadastrarAutor"
+             Title="">
     <ContentPage.Resources>
         <Style TargetType="Entry">
             <Setter Property="BackgroundColor" Value="White"/>
@@ -15,11 +13,10 @@
     <ContentPage.Content>
         <StackLayout Margin="30,15,0,0">
             <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*">
-                <Label Text="Cadastro de Funcionario" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="30"/>
+                <Label Text="Cadastro de Autor" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="30"/>
                 <Entry Placeholder="Nome" x:Name="txtNome" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
-                <Entry Placeholder="Senha" x:Name="txtSenha" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
                 <Entry Placeholder="Confirmar senha" x:Name="txtConfirmarSenha" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"/>
-                <Button Text="Confirmar" Clicked="AdicionarFuncionario" Grid.Column="1" Grid.Row="4" Margin="0,20,0,0" Grid.ColumnSpan="2" HorizontalOptions="Center" BackgroundColor="#8A2BE2"/>
+                <Button Text="Confirmar" Grid.Column="1" Grid.Row="4" Margin="0,20,0,0" Grid.ColumnSpan="2" HorizontalOptions="Center" BackgroundColor="#8A2BE2"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
