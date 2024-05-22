@@ -2,16 +2,16 @@ using SistemaBiblioteca.Models;
 
 namespace SistemaBiblioteca.Views;
 
-public partial class CadastroCategoria : ContentPage
+public partial class CadastroPessoa : ContentPage
 {
-    Categoria c;
-	public CadastroCategoria()
+	public CadastroPessoa()
 	{
 		InitializeComponent();
 	}
 
-    private void btnCadastoCategoria(object sender, EventArgs e)
+    private void btnAdicionarPessoa(object sender, EventArgs e)
     {
+        Pessoa p;
         try
         {
             if (txtNome.Text == null)
@@ -20,11 +20,13 @@ public partial class CadastroCategoria : ContentPage
             }
             else
             {
-                c = new Categoria()
+                p = new Pessoa()
                 {
-                    Nome = txtNome.Text
+                    RmRg = int.Parse(txtRMRG.Text),
+                    Nome = txtNome.Text,
+                    QuantidadeLivrosRestantes = int.Parse(txtQuantidadeLivros.Text)
                 };
-                c.AdicionarCategoria();
+                p.AdicionarPessoa();
                 txtNome.Text = "";
             }
         }

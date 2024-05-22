@@ -27,9 +27,9 @@ namespace SistemaBiblioteca
             await Navigation.PushAsync(new CadastrarAutor());
         }
 
-        private void Categoria(object sender, EventArgs e)
+        private async void Categoria(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new CadastroCategoria());
         }
         private void Editora(object sender, EventArgs e)
         {

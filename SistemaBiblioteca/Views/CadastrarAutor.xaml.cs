@@ -14,7 +14,7 @@ public partial class CadastrarAutor : ContentPage
     {
 		try
 		{
-            if (txtNome.Text == null)
+            if (txtNome.Text == "" || txtNome.Text == null)
             {
                 DisplayAlert("Ops", "Preencha todos os campos!", "OK");
             }
