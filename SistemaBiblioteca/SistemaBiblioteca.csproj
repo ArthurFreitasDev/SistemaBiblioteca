@@ -67,6 +67,9 @@
 	  <MauiXaml Update="Views\CadastrarAutor.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\CadastroCategoria.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\CadastroFuncionario.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

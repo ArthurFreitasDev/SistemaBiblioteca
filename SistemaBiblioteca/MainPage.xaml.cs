@@ -12,16 +12,19 @@ namespace SistemaBiblioteca
             
         }
 
+        private void ContentPage_Loaded(object sender, EventArgs e)
+        {
+            Banco.CriarBanco();
+        }
+
         private async void Funcionario(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroFuncionario());
-            Banco.CriarBanco();
         }
 
         private async void Autor(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastrarAutor());
-            Banco.CriarBanco();
         }
 
         private void Categoria(object sender, EventArgs e)

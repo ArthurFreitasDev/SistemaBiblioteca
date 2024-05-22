@@ -9,7 +9,6 @@ public partial class CadastroFuncionario : ContentPage
 	public CadastroFuncionario()
 	{
 		InitializeComponent();
-        Banco.CriarBanco();
     }
 
     private async void AdicionarFuncionario(object sender, EventArgs e)

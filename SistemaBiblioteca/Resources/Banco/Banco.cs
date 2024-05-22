@@ -48,10 +48,15 @@ namespace SistemaBiblioteca.Resources.Banco
             {
                 AbrirConexao();
                 Comando = new MySqlCommand("create database if not exists Biblioteca;", Conexao);
+                Comando.ExecuteNonQuery();
                 Comando = new MySqlCommand("use Biblioteca;", Conexao);
                 Comando.ExecuteNonQuery();
 
                 Comando = new MySqlCommand("create table if not exists Funcionario(idFuncionario int auto_increment,Nome varchar(40),Senha varchar(40),primary key (idFuncionario));", Conexao);
+                Comando.ExecuteNonQuery();
+                Comando = new MySqlCommand("create table if not exists Autor(idAutor int auto_increment,Nome varchar(40),primary key (idAutor));", Conexao);
+                Comando.ExecuteNonQuery();
+                Comando = new MySqlCommand("create table if not exists Categoria(idCategoria int auto_increment,Nome varchar(40),primary key (idCategoria));", Conexao);
                 Comando.ExecuteNonQuery();
                 FecharConexao();
             }
