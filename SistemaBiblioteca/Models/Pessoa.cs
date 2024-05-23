@@ -15,7 +15,7 @@ namespace SistemaBiblioteca.Models
         public string Nome { get; set; }
         public bool Condicao { get; set; }
         public string TempoBanimento { get; set; }
-        public string QuantidadeLivrosRestantes { get; set; }
+        public int QuantidadeLivrosRestantes { get; set; }
 
         public void AdicionarPessoa()
         {

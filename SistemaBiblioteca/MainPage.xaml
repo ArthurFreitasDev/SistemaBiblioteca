@@ -9,6 +9,7 @@
         <Button Clicked="Autor" Text="Autor"/>
         <Button Clicked="Categoria" Text="Categoria"/>
         <Button Clicked="Editora" Text="Editora"/>
+        <Button Clicked="Pessoa" Text="Pessoa"/>
     </StackLayout>
 
 </ContentPage>

@@ -35,6 +35,11 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private async void Pessoa(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CadastroPessoa());
+        }
     }
 
 }

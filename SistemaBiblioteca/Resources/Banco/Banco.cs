@@ -58,6 +58,8 @@ namespace SistemaBiblioteca.Resources.Banco
                 Comando.ExecuteNonQuery();
                 Comando = new MySqlCommand("create table if not exists Categoria(idCategoria int auto_increment,Nome varchar(40),primary key (idCategoria));", Conexao);
                 Comando.ExecuteNonQuery();
+                Comando = new MySqlCommand("create table if not exists Pessoa(idPessoa  int auto_increment,RMRG int,Nome varchar(40),Condicao boolean,TempoBanimento date,QuantidadeLivrosRestantes int,primary key (idPessoa));", Conexao);
+                Comando.ExecuteNonQuery();
                 FecharConexao();
             }
             catch (Exception ex)

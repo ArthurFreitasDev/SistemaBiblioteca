@@ -14,7 +14,7 @@ public partial class CadastroPessoa : ContentPage
         Pessoa p;
         try
         {
-            if (txtNome.Text == null)
+            if (txtNome.Text == null || txtNome.Text == "" || txtQuantidadeLivros.Text == null || txtQuantidadeLivros.Text == "" || txtRMRG.Text == null || txtRMRG.Text == "")
             {
                 DisplayAlert("Ops", "Preencha todos os campos!", "OK");
             }
@@ -24,10 +24,14 @@ public partial class CadastroPessoa : ContentPage
                 {
                     RmRg = int.Parse(txtRMRG.Text),
                     Nome = txtNome.Text,
-                    QuantidadeLivrosRestantes = int.Parse(txtQuantidadeLivros.Text)
+                    QuantidadeLivrosRestantes = int.Parse(txtQuantidadeLivros.Text),
+                    Condicao = true,
+                    TempoBanimento = DateTimeKind(20,10,2000)
                 };
                 p.AdicionarPessoa();
                 txtNome.Text = "";
+                txtQuantidadeLivros.Text = "";
+                txtRMRG.Text = "";
             }
         }
         catch (Exception ex)
