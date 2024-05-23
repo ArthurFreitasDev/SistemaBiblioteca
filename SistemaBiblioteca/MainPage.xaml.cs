@@ -31,14 +31,19 @@ namespace SistemaBiblioteca
         {
             await Navigation.PushAsync(new CadastroCategoria());
         }
-        private void Editora(object sender, EventArgs e)
+        private async void Editora(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new CadastroEditora());
         }
 
         private async void Pessoa(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroPessoa());
+        }
+
+        private async void Livro(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new CadastroLivro());
         }
     }
 

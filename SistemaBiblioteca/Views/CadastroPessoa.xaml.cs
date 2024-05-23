@@ -26,7 +26,6 @@ public partial class CadastroPessoa : ContentPage
                     Nome = txtNome.Text,
                     QuantidadeLivrosRestantes = int.Parse(txtQuantidadeLivros.Text),
                     Condicao = true,
-                    TempoBanimento = DateTimeKind(20,10,2000)
                 };
                 p.AdicionarPessoa();
                 txtNome.Text = "";

@@ -22,18 +22,17 @@ namespace SistemaBiblioteca.Models
             try
             {
                 Banco.AbrirConexao();
-                Banco.Comando = new MySqlCommand("INSERT INTO Funcionario (RMRG, Nome, Condicao, TempoBanimento, QuantidadeLivrosRestantes) VALUES (@RmRg, @Nome, @Condicao, @TempoBanimento, @QuantidadesLivrosRestantes)", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("INSERT INTO Pessoa (RMRG, Nome, Condicao, QuantidadeLivrosRestantes) VALUES (@RmRg, @Nome, @Condicao, @QuantidadeLivrosRestantes);", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@RmRg", RmRg);
                 Banco.Comando.Parameters.AddWithValue("@Nome", Nome);
                 Banco.Comando.Parameters.AddWithValue("@Condicao", Condicao);
-                Banco.Comando.Parameters.AddWithValue("@TempoBanimento", TempoBanimento);
                 Banco.Comando.Parameters.AddWithValue("@QuantidadeLivrosRestantes", QuantidadeLivrosRestantes);
                 Banco.Comando.ExecuteNonQuery();
                 Banco.FecharConexao();
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Erro!==========" + ex.Message);
+                System.Diagnostics.Debug.WriteLine("Erro!==========aaaa" + ex.Message);
             }
         }
     }

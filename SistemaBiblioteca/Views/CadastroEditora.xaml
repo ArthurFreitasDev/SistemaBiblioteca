@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaBiblioteca.Views.CadastroEditora"
+             Title=""
+             BackgroundColor="#7B68EE">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="BackgroundColor" Value="White"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Margin="30,15,0,0">
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*,*">
+                <Label Text="Cadastro de Editora" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="30"/>
+                <Entry Placeholder="Nome" x:Name="txtNome" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
+                <Button Text="Confirmar" Grid.Column="1" Grid.Row="4" Margin="0,20,0,0" Grid.ColumnSpan="2" HorizontalOptions="Center" BackgroundColor="#8A2BE2" Clicked="btnCadastroEditora"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
