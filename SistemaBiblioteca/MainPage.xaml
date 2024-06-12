@@ -5,12 +5,14 @@
              Loaded="ContentPage_Loaded">
 
     <StackLayout>
-        <Button Clicked="Funcionario" Text="Funcionario"/>
-        <Button Clicked="Autor" Text="Autor"/>
-        <Button Clicked="Categoria" Text="Categoria"/>
-        <Button Clicked="Editora" Text="Editora"/>
-        <Button Clicked="Pessoa" Text="Pessoa"/>
-        <Button Clicked="Livro" Text="Livro"/>
+        <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*,*,*,*">
+            <ImageButton Grid.Column="1" Grid.Row="1" Clicked="CadastroPessoa"/>
+            <ImageButton Grid.Column="2" Grid.Row="1" Clicked="CadastroAutor"/>
+            <ImageButton Grid.Column="3" Grid.Row="1" Clicked="CadastroEditora"/>
+            <ImageButton Grid.Column="1" Grid.Row="2" Clicked="CadastroLivro" Source="Resources/Images/Livro.png"/>
+            <ImageButton Grid.Column="2" Grid.Row="2" Clicked="CadastroFuncionario"/>
+            <ImageButton Grid.Column="3" Grid.Row="2" Clicked="CadastroCategoria"/>
+        </Grid>
     </StackLayout>
 
 </ContentPage>

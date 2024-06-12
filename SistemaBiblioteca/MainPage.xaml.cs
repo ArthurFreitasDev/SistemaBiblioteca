@@ -17,31 +17,31 @@ namespace SistemaBiblioteca
             Banco.CriarBanco();
         }
 
-        private async void Funcionario(object sender, EventArgs e)
+        private async void CadastroFuncionario(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroFuncionario());
         }
 
-        private async void Autor(object sender, EventArgs e)
+        private async void CadastroAutor(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastrarAutor());
         }
 
-        private async void Categoria(object sender, EventArgs e)
+        private async void CadastroCategoria(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroCategoria());
         }
-        private async void Editora(object sender, EventArgs e)
+        private async void CadastroEditora(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroEditora());
         }
 
-        private async void Pessoa(object sender, EventArgs e)
+        private async void CadastroPessoa(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroPessoa());
         }
 
-        private async void Livro(object sender, EventArgs e)
+        private async void CadastroLivro(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new CadastroLivro());
         }
