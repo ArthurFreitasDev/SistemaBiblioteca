@@ -13,6 +13,9 @@ namespace SistemaBiblioteca.Models
         public int idCategoria {  get; set; }
         public string Nome { get; set; }
 
+        public static List<Categoria> list_cat = new List<Categoria>();
+
+
         public void AdicionarCategoria()
         {
             try
