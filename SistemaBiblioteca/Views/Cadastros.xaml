@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SistemaBiblioteca.Views.Cadastros"
+             Title=""
+             BackgroundColor="#7B68EE">
+
+    <ContentPage.Resources>
+        <Style TargetType="ImageButton">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="BorderColor" Value="Transparent"/>
+        </Style>
+    </ContentPage.Resources>
+    <StackLayout VerticalOptions="Center">
+        <Grid RowDefinitions="*,*" ColumnDefinitions="*,*,*">
+            <ImageButton Grid.Column="0" Grid.Row="0" Source="Resources/Images/addlivro.png" Clicked="AdicionarLivro"/>
+            <ImageButton Grid.Column="1" Grid.Row="0" Source="Resources/Images/addeditora.png" Clicked="AdicionarEditora"/>
+            <ImageButton Grid.Column="2" Grid.Row="0" Source="Resources/Images/addcategoria.png" Clicked="AdicionarCategoria"/>
+
+            <ImageButton Grid.Column="0" Grid.Row="1" Source="Resources/Images/addpessoa.png" Grid.ColumnSpan="2" Clicked="AdicionarPessoa"/>
+            <ImageButton Grid.Column="1" Grid.Row="1" Source="Resources/Images/addautor.png" Grid.ColumnSpan="2" Clicked="AdicionarAutor"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

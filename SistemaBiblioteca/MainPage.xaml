@@ -3,22 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SistemaBiblioteca.MainPage"
              Loaded="ContentPage_Loaded"
-             Title="">
+             Title=""
+             BackgroundColor="#7B68EE">
 
     <ContentPage.Resources>
         <Style TargetType="ImageButton">
             <Setter Property="Margin" Value="10"/>
             <Setter Property="WidthRequest" Value="300"/>
+            <Setter Property="BackgroundColor" Value="Transparent"/>
+            <Setter Property="BorderColor" Value="Transparent"/>
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="White"/>
         </Style>
     </ContentPage.Resources>
-    <StackLayout>
-        <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*,*">
-            <ImageButton Grid.Column="1" Grid.Row="0" Clicked="CadastroPessoa" Source="Resources/Images/Livro.png"/>
-            <ImageButton Grid.Column="2" Grid.Row="0" Clicked="CadastroAutor" Source="Resources/Images/Livro.png"/>
-            <ImageButton Grid.Column="3" Grid.Row="0" Clicked="CadastroEditora" Source="Resources/Images/Livro.png"/>
-            <ImageButton Grid.Column="1" Grid.Row="1" Clicked="CadastroLivro" Source="Resources/Images/Livro.png"/>
-            <ImageButton Grid.Column="2" Grid.Row="1" Clicked="CadastroFuncionario" Source="Resources/Images/Livro.png"/>
-            <ImageButton Grid.Column="3" Grid.Row="1" Clicked="CadastroCategoria" Source="Resources/Images/Livro.png"/>
+    <StackLayout VerticalOptions="Center">
+        <Grid ColumnDefinitions="*,*,*" RowDefinitions="*,*">
+            <ImageButton Grid.Column="0" Grid.Row="0" Clicked="PaginaPessoas" Source="Resources/Images/pessoa.png"/>
+            <ImageButton Grid.Column="1" Grid.Row="0" Clicked="PaginaLivros" Source="Resources/Images/livro.png"/>
+            <ImageButton Grid.Column="2" Grid.Row="0" Clicked="PaginaCadastros" Source="Resources/Images/cadastros.png"/>
+
+            <Label Text="Pessoas" Grid.Column="0" Grid.Row="1" Margin="0,0,30,0"/>
+            <Label Text="livros" Grid.Column="1" Grid.Row="1"/>
+            <Label Text="Cadastros" Grid.Column="2" Grid.Row="1"/>
         </Grid>
     </StackLayout>
 

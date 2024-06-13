@@ -56,15 +56,50 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiImage Remove="Resources\Images\Livro.png" />
+	  <MauiImage Remove="Resources\Images\addautor.png" />
+	  <MauiImage Remove="Resources\Images\addcategoria.png" />
+	  <MauiImage Remove="Resources\Images\addeditora.png" />
+	  <MauiImage Remove="Resources\Images\addlivro.png" />
+	  <MauiImage Remove="Resources\Images\addpessoa.png" />
+	  <MauiImage Remove="Resources\Images\cadastros.png" />
+	  <MauiImage Remove="Resources\Images\livro.png" />
+	  <MauiImage Remove="Resources\Images\pessoa.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="Resources\Images\Livro.png" />
+	  <None Remove="Resources\Images\addautor.png" />
+	  <None Remove="Resources\Images\addcategoria.png" />
+	  <None Remove="Resources\Images\addeditora.png" />
+	  <None Remove="Resources\Images\addlivro.png" />
+	  <None Remove="Resources\Images\addpessoa.png" />
+	  <None Remove="Resources\Images\cadastros.png" />
+	  <None Remove="Resources\Images\livro.png" />
+	  <None Remove="Resources\Images\pessoa.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Images\Livro.png">
+	  <EmbeddedResource Include="Resources\Images\addautor.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\addcategoria.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\addeditora.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\addlivro.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\addpessoa.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\cadastros.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\livro.png">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	  <EmbeddedResource Include="Resources\Images\pessoa.png">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </EmbeddedResource>
 	</ItemGroup>
@@ -93,6 +128,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\CadastroPessoa.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Cadastros.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

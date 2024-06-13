@@ -13,12 +13,14 @@
 
     <ContentPage.Content>
         <StackLayout Margin="30,15,0,0">
-            <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*">
+            <Grid RowDefinitions="*,*,*,*,*,*,*" ColumnDefinitions="*,*,*,*">
                 <Label Text="Cadastro de Pessoa" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center" FontSize="30"/>
                 <Entry Placeholder="Titulo" x:Name="txtTitulo" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2"/>
                 <Entry Placeholder="Sinopse" x:Name="txtRMRG" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2"/>
-                <Picker x:Name="pck_generos"/>
-                <Button Text="Confirmar" Grid.Column="1" Grid.Row="4" Margin="0,20,0,0" Grid.ColumnSpan="2" HorizontalOptions="Center" BackgroundColor="#8A2BE2"/>
+                <Entry Placeholder="Autor" x:Name="txtAutor" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"/>
+                <Entry Placeholder="Editora" x:Name="txtEditora" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2"/>
+                <Entry Placeholder="Categoria" x:Name="txtCategoria" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2"/>
+                <Button Text="Confirmar" Grid.Column="1" Grid.Row="6" Margin="0,20,0,0" Grid.ColumnSpan="2" HorizontalOptions="Center" BackgroundColor="#8A2BE2"/>
             </Grid>
         </StackLayout>
     </ContentPage.Content>
