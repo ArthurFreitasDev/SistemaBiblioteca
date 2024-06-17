@@ -69,7 +69,8 @@ namespace SistemaBiblioteca.Resources.Banco
             try
             {
                 AbrirConexao();
-                Comando = new MySqlCommand("SELECT * FROM Categoria;");
+                Comando = new MySqlCommand("SELECT * FROM Categoria;", Conexao);
+                                
 
                 using (var result = Comando.ExecuteReader())
                 {

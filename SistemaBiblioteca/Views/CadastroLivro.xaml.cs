@@ -11,6 +11,8 @@ public partial class CadastroLivro : ContentPage
 	{
 		InitializeComponent();
 
-		
+		Banco.getAllGeneros();
 	}
+
+
 }
