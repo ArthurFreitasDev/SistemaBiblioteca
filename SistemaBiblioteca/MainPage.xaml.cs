@@ -9,7 +9,6 @@ namespace SistemaBiblioteca
         public MainPage()
         {
             InitializeComponent();
-            
         }
 
         private void ContentPage_Loaded(object sender, EventArgs e)

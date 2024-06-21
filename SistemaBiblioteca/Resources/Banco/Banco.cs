@@ -28,7 +28,7 @@ namespace SistemaBiblioteca.Resources.Banco
             }
             catch(Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Erro!==========" + ex.Message);
+                Debug.WriteLine("Erro!==========" + ex.Message);
             }
         }
 
@@ -40,7 +40,7 @@ namespace SistemaBiblioteca.Resources.Banco
             }
             catch(Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Erro!" + ex.Message);
+                Debug.WriteLine("Erro!" + ex.Message);
             }
         }
 
@@ -60,7 +60,7 @@ namespace SistemaBiblioteca.Resources.Banco
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine("Erro!" + ex.Message);
+                Debug.WriteLine("Erro!" + ex.Message);
             }
         }
 
